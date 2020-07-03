@@ -1,0 +1,19 @@
+{
+  "name": "jsbn",
+  "version": "1.0.0",
+  "description": "BigIntegers and RSA in JavaScript =================================",
+  "main": "jsbn.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r2fresh/jsbn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/r2fresh/jsbn/issues"
+  },
+  "homepage": "https://github.com/r2fresh/jsbn#readme"
+}
