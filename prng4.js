@@ -9,10 +9,9 @@ function Arcfour() {
 // Initialize arcfour context from key, an array of ints, each from [0..255]
 function ARC4init(key) {
   var i, j, t;
-  for(i = 0; i < 256; ++i)
-    this.S[i] = i;
+  for (i = 0; i < 256; ++i) this.S[i] = i;
   j = 0;
-  for(i = 0; i < 256; ++i) {
+  for (i = 0; i < 256; ++i) {
     j = (j + this.S[i] + key[i % key.length]) & 255;
     t = this.S[i];
     this.S[i] = this.S[j];
@@ -43,3 +42,5 @@ function prng_newstate() {
 // Pool size must be a multiple of 4 and greater than 32.
 // An array of bytes the size of the pool will be passed to init()
 var rng_psize = 256;
+
+export { prng_newstate, rng_psize };
